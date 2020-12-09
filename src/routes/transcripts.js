@@ -13,7 +13,8 @@ router.post('/add', function(req, res, next) {
 
     res.send({
         status: 200,
-        msg: 'success',
+        message: 'success',
+        timestamp: new Date(),
         result: {
             applicationNumber: newAppNumber,
             status: 'submitted',
